@@ -1,0 +1,64 @@
+<!-- Mancala Boardgame -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.player1{
+			background-color: #00CBE7;
+			color: white;
+		}
+		.player2{
+			background-color: #DF151A;
+			color: white;
+		}
+		.score{
+			padding: 10%;
+			text-align: center;
+		}
+        .instructions{
+			height: 500px;
+			overflow: hidden;
+            background-color: #2F4F4F;
+            text-align: center;
+			color: white;
+        }
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6 player1">
+				<div class="score">
+					<h1 style="font-size: 120px;">5</h1>
+				</div>
+			</div>
+			<div class="col-xs-6 player2">
+				<div class="score">
+
+					<h1 style="font-size: 120px;">6</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="instructions">
+				<h1>Some sexy instructions</h1>
+			</div>
+		</div>    
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/app.js"></script>
+</body>
